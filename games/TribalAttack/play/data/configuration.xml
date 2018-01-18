@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<elements>
+<sprites>
+	<sprite code="spacecraft" name="images/SpaceCraft.png" nbFrameMax="7" nbRows="4">
+		<animations>
+			<animation code="idle" nbFrame="4" nbRow="0" FPS="6.66" cycle="-1"/><!-- boucle = -1 lue une fois = 1 -->
+			<animation code="up" nbFrame="3" nbRow ="1" FPS="10" cycle="-1"/>
+			<animation code="down" nbFrame="4" nbRow="2" FPS="10" cycle="1"/>
+			<animation code="explode" nbFrame="7" nbRow="3" FPS="10" cycle="-1" />
+		</animations>
+		<hitboxs>
+			<hitbox offsetX="3" offsetY="1"  width="94" height="35"/> 
+			<hitbox offsetX="13" offsetY="35" width="66" height="6"/> 
+			<hitbox offsetX="13" offsetY="40" width="53" height="8"/> 
+		</hitboxs>
+	</sprite>
+	<sprite code="spacecraft_Bullet" name="images/SpaceCraft_bullet.png" nbFrameMax="5" nbRows="1">
+		<animations>
+			<animation code="idle" nbFrame="4" nbRow="0" FPS="6.66" cycle="1"/>
+		</animations>
+		<hitboxs>
+			<hitbox offsetX="0" offsetY="0" width="16" height="16" />
+		</hitboxs>
+ 	</sprite>
+ 	<sprite code="spacecraft_Bomb" name="images/SpaceCraft_bomb.png" nbFrameMax="8" nbRows="1">
+ 		<animations>
+ 			<animation code="idle" nbFrame="7" nbRow="0" FPS="6.66" cycle="1" />
+ 		</animations>
+ 		<hitboxs>
+ 			<hitbox offsetX="54" offsetY="60" width="34" height="18" />
+ 		</hitboxs>
+ 	</sprite>
+ 	<sprite code="spacecraft_Prop" name="images/SpaceCraft_propulsor.png" nbFrameMax="7" nbRows="3">
+ 		<animations>
+ 			<animation code="idle" nbFrame="7" nbRow="0" FPS="10" cycle="-1" />
+  			<animation code="avant" nbFrame="7" nbRow="1" FPS="10" cycle="-1" />
+ 			<animation code="arriere" nbFrame="7" nbRow="2" FPS="10" cycle="-1" />
+ 		</animations>
+ 	</sprite>
+ 	<sprite code="spacecraft_Shield" name="images/SpaceCraft_shield.png" nbFrameMax="2" nbRows="1">
+ 		<animations>
+ 			<animation code="idle" nbFrame="2" nbRow="0" FPS="5" cycle="-1" />
+  		</animations>
+ 	</sprite>
+ 	<sprite code="spacecraft_Feature" name="images/spaceCraftFeature.png" nbFrameMax="1" nbRows="1">
+ 		<animations>
+ 			<animation code="idle" nbFrame="1" nbRow="0" FPS="5" cycle="-1" />
+  		</animations>
+  		<hitboxs>
+			<hitbox offsetX="3" offsetY="1"  width="94" height="35"/> 
+			<hitbox offsetX="13" offsetY="35" width="66" height="6"/> 
+			<hitbox offsetX="13" offsetY="40" width="53" height="8"/> 
+  		</hitboxs>
+ 	</sprite>
+
+
+	<sprite code="enemy_1" name="images/Enemy_1.png" nbFrameMax="9" nbRows="2">
+		<animations>
+			<animation code="idle" nbFrame="4" nbRow="0" FPS="6.66" cycle="-1"/>
+			<animation code="explode" nbFrame="9" nbRow="1" FPS="10" cycle="-1"/>
+		</animations>
+		 <hitboxs>
+			<hitbox offsetX="1" offsetY="1" width="39" height="64" />
+		</hitboxs>
+	</sprite>
+	<sprite code="enemy_1Bullet" name="images/Enemy_1_Bullet.png" nbFrameMax="1" nbRows="1">
+		<animations>
+			<animation code="idle" nbFrame="1" nbRow="0" FPS="6.66" cycle="-1" />
+		</animations>
+		<hitboxs>
+			<hitbox offsetX="0" offsetY="0" width="16" height="16" />
+		</hitboxs>
+	</sprite>
+
+
+
+	<sprite code="enemy_2" name="images/Enemy_2.png" nbFrameMax="6" nbRows="2">
+		<animations>
+			<animation code="idle" nbFrame="5" nbRow="0" FPS="5" cycle="-1"/>
+			<animation code="explode" nbFrame="6" nbRow="1" FPS="10" cycle="-1"/>
+		</animations>
+		<hitboxs>
+			<hitbox offsetX="7" offsetY="2" width="84" height="34" />
+			<hitbox offsetX="18" offsetY="35" width="62" height="21" />
+			<hitbox offsetX="30" offsetY="56" width="43" height="8" />
+		</hitboxs>
+	</sprite>
+
+
+	<sprite code="enemy_3" name="images/Enemy_3.png" nbFrameMax="10" nbRows="3">
+		<animations>
+			<animation code="idle" nbFrame="8" nbRow="0" FPS="10" cycle="-1"/>
+			<animation code="hit"  nbFrame="10" nbRow="1" FPS="10" cycle="-1"/>
+			<animation code="explode" nbFrame="6" nbRow="2" FPS="10" cycle="-1"/>
+ 		</animations>
+ 		<hitboxs>
+ 			<hitbox offsetX="8" offsetY="3" width="63" height="23" /> 
+ 			<hitbox offsetX="14" offsetY="25" width="122" height="38" /> 
+ 			<hitbox offsetX="48" offsetY="63" width="89" height="60" />
+ 		</hitboxs>
+	</sprite>
+	<sprite code="enemy_3Bullet" name="images/Enemy_3_bullet.png" nbFrameMax="1" nbRows="1">
+		<animations>
+			<animation code="idle" nbFrame="1" nbRow="0" FPS="6.66" cycle="-1" />
+		</animations>
+		<hitboxs>
+			<hitbox offsetX="0" offsetY="6" width="29" height="18" />
+		</hitboxs>
+	</sprite>
+
+	<sprite code="bonus" name="images/Bonus2.png" nbFrameMax="2" nbRows="4">
+		<animations>
+			<animation code="bullet" nbFrame="2" nbRow="0" FPS="10" cycle="-1"/>
+			<animation code="shield" nbFrame="2" nbRow="1" FPS="10" cycle="-1"/>
+			<animation code="feature"    nbFrame="2" nbRow="2" FPS="10" cycle="-1"/>
+			<animation code="bomb"   nbFrame="2" nbRow="3" FPS="10" cycle="-1"/>
+		</animations>
+		<hitboxs>
+			<hitbox offsetX="0" offsetY="0" width="48" height="48" />
+		</hitboxs>
+	</sprite>
+
+
+	<sprite code="boss1" name="images/Boss_part_1.png" nbFrameMax="4" nbRows="2">
+		<animations>
+			<animation code="idle" nbFrame="4" nbRow="0" FPS="6.66" cycle="-1" />
+			<animation code="hit"  nbFrame="4" nbRow="1" FPS="6.66" cycle="-1" />
+		</animations>
+		<hitboxs>
+			<hitbox offsetX="0" offsetY="31" width="125" height="180" />
+			<hitbox offsetX="31" offsetY="0" width="107" height="31" />
+		</hitboxs>
+	</sprite>
+	<sprite code="bossBullet1" name="images/Boss_bullet_1.png" nbFrameMax="1" nbRows="1">
+		<animations>
+			<animation code="idle" nbFrame="1" nbRow="0" FPS="6.66" cycle="-1" />
+		</animations>
+		<hitboxs>
+			<hitbox offsetX="1" offsetY="4" width="19" height="24" />
+		</hitboxs>
+	</sprite>	
+
+	<sprite code="boss2" name="images/Boss_part_2.png" nbFrameMax="4" nbRows="2">
+		<animations>
+			<animation code="idle" nbFrame="4" nbRow="0" FPS="6.66" cycle="-1" />
+			<animation code="hit"  nbFrame="4" nbRow="1" FPS="6.66" cycle="-1" />
+		</animations>
+		<hitboxs>
+			<hitbox offsetX="2" offsetY="168" width="236" height="31" />
+			<hitbox offsetX="28" offsetY="199" width="196" height="38" />
+			<hitbox offsetX="30" offsetY="105" width="207" height="64" />
+		</hitboxs>
+ 	</sprite>
+	<sprite code="boss3" name="images/Boss_part_3.png" nbFrameMax="4" nbRows="1">
+		<animations>
+			<animation code="idle" nbFrame="4" nbRow="0" FPS="6.66" cycle="-1" />
+		</animations>
+		<hitboxs>
+			<hitbox offsetX="10" offsetY="40" width="147" height="117" />
+			<hitbox offsetX="63" offsetY="4" width="122" height="37" />
+		</hitboxs>
+	</sprite>
+	<sprite code="bossBullet2" name="images/Boss_bullet_2.png" nbFrameMax="4" nbRows="1">
+		<animations>
+			<animation code="idle" nbFrame="4" nbRow="0" FPS="10" cycle="-1" />
+		</animations>
+		<hitboxs>
+			<hitbox offsetX="12" offsetY="24" width="14" height="15" />
+			<hitbox offsetX="18" offsetY="17" width="33" height="30" />
+		</hitboxs>
+	</sprite>	
+
+</sprites>
+
+
+<backgrounds>
+	<background code="background1" vitesse="3.6"  url="images/Background_1.png"/>
+	<background code="background2" vitesse="2.35" url="images/Background_2.png"/>
+	<background code="background0" vitesse="2.85" url="images/Background_0,5.png"/>
+	<background code="foreground1" vitesse="5"  url="images/Foreground_01.png"/>
+	<background code="foreground2" vitesse="5"  url="images/Foreground_02.png"/>
+</backgrounds>
+
+
+<huds>
+	<hud code="lifeMeter" url="images/HUD_Life_Meter.png"/>
+	<hud code="lifeMeterFill" url="images/HUD_Life_Meter_fill.png"/>
+	<hud code="bomb" url="images/HUD_bomb.png" />
+	<hud code="life" url="images/HUD_life.png" />
+	<hud code="feature" url="images/HUD_feature.png" />
+</huds>
+
+<typos>
+	<typo code="letters" url="images/HUD_Letters.png" nbFrame="35" />
+	<typo code="numbers" url="images/HUD_numbers.png" nbFrame="10" />
+	
+</typos>
+
+<menus>
+	<menu code="fleches" url="images/fleches.png" y="190"/>
+	<menu code="espace"  url="images/espace.png"  y="310"/>
+	<menu code="toucheB" url="images/toucheB.png" y="410"/>
+	<menu code="toucheN" url="images/toucheN.png" y="510"/>
+	<menu code="toucheV" url="images/toucheV.png" y="610"/>
+	<menu code="gamepad" url="images/GamepadControls.png" y="0"/>
+	<menu code="isart"   url="images/isart.png" y="0" />
+</menus>
+
+<musics>
+	<music code="ambiance" url1="musics/The_Hidden_Tribe.mp3" url2="The_Hidden_Tribe.ogg"/>
+	<!-- <music code="tir" url="musics/"/> -->
+</musics>
+</elements>

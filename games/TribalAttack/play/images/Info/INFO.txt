@@ -1,0 +1,74 @@
+	SPACECRAFT
+
+SPACECRAFT : 		IDLE : 0.15sec/frame
+			DEPLACEMENT HAUT : 0.1sec/frame
+			DEPLACEMENT BAS	: 0.15sec/frame		JOUER L'ANIMATION 1 SEULE FOIS ET ARRETER SUR LA DERNIERE IMAGE
+			EXPLOSION : 0.1sec/frame
+
+SPACECRAFT PROPULSOR :  IDLE : 0.1sec/frame
+		  	AVANT : 0.1sec/frame	
+			ARRIERE : 0.1sec/frame
+
+SPACECRAFT SHIELD :	 ANIMATION : 0.2sec/frame
+
+SPACECRAFT BULLET  :	 0.1sec/frame				JOUER L'ANIMATION 1 SEULE FOIS ET ARRETER SUR LA DERNIERE IMAGE
+								LE BOULET PART DU CANON
+
+SPACECRAFT BOMB : 	01sec/frame
+
+
+
+	ENEMY 1
+
+ENEMY 1 : 		IDLE : 0.15sec/frame
+			EXPLOSION : 0.8 sec/frame		Retirer les frames 5 et 7 si l'anmiation est trop lourde, garder l'animation complete si possible.
+
+ENEMY 1 PROPULSOR : 	AUCUNE ANIMATION : 			Propulseur compris dans le sprite de base
+
+ENEMY 1 BULLET : 	AUCUNE ANIMATION			La boule de feu part de la bouche du totem	
+
+
+
+	ENEMY 2
+
+ENEMY 2 : 		IDLE : 0.2sec/frame
+			EXPLOSION : 0,1sec/frame
+			PAS DE DAMAGED IDLE
+
+	ENEMY 3
+
+ENEMY 3 :		IDLE : 0.1sec/frame
+			DAMAGED IDLE: 0.1sec/frame
+			EXPLOSION: 0.1sec/frame
+
+ENEMY 3 BULLET :	AUCUNE ANIMATION
+
+
+	BOSS
+
+BOSS PART 1 : 		IDLE : 0.2sec/frame
+			DAMAGED IDLE : 0.2sec/frame		La flame derrière le totem s'eteint
+
+BOSS PART 2 :		IDLE : 0.2sec/frame
+			DAMAGED IDLE : 0.2sec/frame		La flame derrière le totem s'eteint
+
+BOSS PART 3 : 		IDLE : 0.2sec/frame
+
+Boss bullet 1 : 	PAS D'ANIMATION				Les boules de feu partent des bouches des totems (le grand et le petit)
+
+Boss bullet 2 :		TIR : 0.1sec/frame			La grande boule de feu se tir de la gueule du dragon durant la 3eme phase.
+								Durant la 3eme phase les deux totems peuvent continuer de tirer des boules de feu.			
+
+	
+	DECORS
+
+Le décors dispose d'un plan 0,5 (une île volante située très proche du joueur), situé entre l'espace de jeu et le BG_1, c'est le plan qui défile le plus rapidement
+L'île ne passe qu'une fois durant la partie.L'ile passe donc derrière le vaisseau.
+
+Les éléments d'avant plan défile aléatoirement assez rarement durant la partie.
+
+
+	BONUS
+
+Les Bonus disposent tous d'une animation en 2 frames. Il y a donc 4 spritesheets, 1 par bonus avec les 2 frames correspondantes.
+Les bonus sont laissés par l'île au trésor (enemy 2).
