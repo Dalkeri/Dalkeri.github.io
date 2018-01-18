@@ -6,15 +6,6 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 This is Prologue, a simple, single page responsive site template. It features a
 clean, minimalistic design and a sticky sidebar with navigation-linked scrolling.
 	
-Demo images* are courtesy of the ridiculously talented Felicia Simion. Check out
-more of her amazing work over at deviantART:
-
-http://ineedchemicalx.deviantart.com/
-
-* Not included with this download (replaced with generic placeholder images).
-I only have permission to use her work in my own onsite demos so do NOT download
-or use any of her photos without her explicit permission.
-
 
 AJ
 n33.co @n33co dribbble.com/n33
